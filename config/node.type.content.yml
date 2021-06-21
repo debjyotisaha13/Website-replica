@@ -1,0 +1,17 @@
+uuid: 1015bac1-7d7c-4c01-9ca1-c340ed4cfced
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Content
+type: content
+description: 'Shows contents of type Contents.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
