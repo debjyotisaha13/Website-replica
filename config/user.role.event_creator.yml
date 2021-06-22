@@ -1,0 +1,19 @@
+uuid: 76a7caae-dd62-405c-b3d9-b808df7e1e58
+langcode: en
+status: true
+dependencies: {  }
+id: event_creator
+label: 'Event Creator'
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer menu'
+  - 'administer taxonomy'
+  - 'create events content'
+  - 'delete events revisions'
+  - 'delete own events content'
+  - 'edit own events content'
+  - 'view events revisions'

@@ -1,0 +1,19 @@
+uuid: e2de572c-bee6-4d05-9848-7065014ee009
+langcode: en
+status: true
+dependencies: {  }
+id: news_creator
+label: 'News Creator'
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer menu'
+  - 'administer taxonomy'
+  - 'create news content'
+  - 'delete news revisions'
+  - 'delete own news content'
+  - 'edit own news content'
+  - 'view news revisions'
