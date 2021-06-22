@@ -1,0 +1,32 @@
+uuid: b9a3470b-d892-42d5-b3d2-6a55bf7943f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_dashboard
+  module:
+    - user
+    - views
+  theme:
+    - bartik
+id: views_block__content_dashboard_block_1
+theme: bartik
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:content_dashboard-block_1'
+settings:
+  id: 'views_block:content_dashboard-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      content_creator: content_creator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

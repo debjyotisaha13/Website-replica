@@ -1,0 +1,21 @@
+uuid: 5c1bd2da-72e2-4c5a-9a1b-0ca434c19f2d
+langcode: en
+status: true
+dependencies: {  }
+id: content_creator
+label: 'Content Creator'
+weight: 5
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access in-place editing'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer taxonomy'
+  - 'create content content'
+  - 'delete content revisions'
+  - 'delete own content content'
+  - 'edit own content content'
+  - 'view all revisions'
+  - 'view content revisions'
+  - 'view own unpublished content'
