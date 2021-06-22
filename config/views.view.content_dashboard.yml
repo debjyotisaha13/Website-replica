@@ -430,7 +430,17 @@ display:
           granularity: second
       title: 'Content Dashboard'
       header: {  }
-      footer: {  }
+      footer:
+        node_listing_empty:
+          id: node_listing_empty
+          table: node
+          field: node_listing_empty
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          entity_type: node
+          plugin_id: node_listing_empty
       empty: {  }
       relationships: {  }
       arguments: {  }
