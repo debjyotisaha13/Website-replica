@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_child
+    - field.field.node.page.field_parent
     - node.type.page
   module:
     - text
@@ -30,3 +31,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_child: true
+  field_parent: true

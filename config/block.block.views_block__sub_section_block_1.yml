@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.sub_section
   module:
+    - system
     - views
   theme:
     - bartik
@@ -21,4 +22,9 @@ settings:
   label_display: '0'
   views_label: ''
   items_per_page: none
-visibility: {  }
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/news-and-events/news\r\n/news-and-events/events"
+    negate: true

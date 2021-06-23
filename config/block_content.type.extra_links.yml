@@ -1,0 +1,8 @@
+uuid: 7da949cd-2b3c-4c12-9445-d10cb72c160e
+langcode: en
+status: true
+dependencies: {  }
+id: extra_links
+label: 'Extra Links'
+revision: 0
+description: 'Shows Extra links for the pages.'

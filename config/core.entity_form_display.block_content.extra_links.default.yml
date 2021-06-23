@@ -1,0 +1,38 @@
+uuid: 87520067-e01b-4ad3-9856-a427e2e9c7ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.extra_links
+    - field.field.block_content.extra_links.field_extra_links
+  module:
+    - link
+    - path
+id: block_content.extra_links.default
+targetEntityType: block_content
+bundle: extra_links
+mode: default
+content:
+  field_extra_links:
+    weight: 31
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

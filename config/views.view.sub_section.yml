@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.content
   module:
     - node
     - text
@@ -177,8 +176,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
-          settings: {  }
+          type: text_summary_or_trimmed
+          settings:
+            trim_length: 150
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -204,18 +204,6 @@ display:
             operator_limit_selection: false
             operator_list: {  }
           group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            content: content
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
       sorts:
         created:
           id: created
