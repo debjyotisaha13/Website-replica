@@ -1,23 +1,23 @@
-uuid: 8a06726e-e57b-4c89-99da-eeb57348e35c
+uuid: e5c88e7f-890d-4e6b-abec-d41df2e79c50
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
+    - field.storage.node.field_description
     - node.type.events
   module:
     - text
-id: node.events.body
-field_name: body
+id: node.events.field_description
+field_name: field_description
 entity_type: node
 bundle: events
-label: Body
+label: Description
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: true
+  display_summary: false
   required_summary: false
 field_type: text_with_summary

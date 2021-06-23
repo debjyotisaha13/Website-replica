@@ -1,0 +1,28 @@
+uuid: 2e79e563-37ce-4b3c-8ba4-9e9e07cc92e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parent
+    - node.type.page
+id: node.page.field_parent
+field_name: field_parent
+entity_type: node
+bundle: page
+label: Parent
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
