@@ -10,6 +10,7 @@ permissions:
   - 'access content overview'
   - 'access taxonomy overview'
   - 'access toolbar'
+  - 'administer menu'
   - 'administer taxonomy'
   - 'create news content'
   - 'delete news revisions'
