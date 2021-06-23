@@ -1,0 +1,10 @@
+uuid: ecade24d-5225-42e6-b834-2d1a48dacb51
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.token
+label: Token
+targetEntityType: block_content
+cache: true
