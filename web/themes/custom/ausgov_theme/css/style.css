@@ -2,3 +2,60 @@
  * @file
  * Subtheme specific CSS.
  */
+html * {
+    box-sizing: border-box;
+}
+#header {
+    height: 80px;
+    background: linear-gradient(45deg, #043751 0%, #104f71 30%, #1c809d 80%, #1c809d 100%);
+}
+#header .container {
+    position: relative;
+    height: 100%;
+    padding: auto 50px;
+}
+#crest {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    bottom: 0;
+    display: block;
+    overflow: hidden;
+    width: 203px;
+}
+#site-title {
+    position: absolute;
+    top: 0px;
+    left: 220px;
+    overflow: hidden;
+    width: 200px;
+    height: 100%;
+}
+#navbar-main {
+    padding: 0;
+}
+#navbar-main .navbar {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    margin: 0 15px;
+    box-sizing: border-box;
+}
+#navbar-main .nav-item a {
+    color: black;
+    padding: 1rem 1.5rem;
+}
+#navbar-main .nav-link:hover {
+    background-color: #eee;
+    border-bottom: 5px solid #777;
+    transition: none;
+}
+#navbar-main .navbar-nav .nav-link.is-active{
+    color: #007dab;
+    border-bottom: 5px solid #007dab;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    width: -webkit-fill-available;
+}
