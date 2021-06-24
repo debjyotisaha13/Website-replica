@@ -1,0 +1,30 @@
+uuid: 086f0843-afd1-43cc-ad39-840098798a92
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sub_section
+  module:
+    - system
+    - views
+  theme:
+    - ausgov_theme
+id: ausgov_theme_views_block__sub_section_block_1
+theme: ausgov_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:sub_section-block_1'
+settings:
+  id: 'views_block:sub_section-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/news-and-events/news\r\n/news-and-events/events"
+    negate: true

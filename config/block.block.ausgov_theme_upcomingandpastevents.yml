@@ -1,0 +1,30 @@
+uuid: 640a09d3-6006-445c-a49f-a0d6b5b79e9a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:extra_links:8c240bcb-5972-48d4-9f44-8b8ef54ad375'
+  module:
+    - block_content
+    - system
+  theme:
+    - ausgov_theme
+id: ausgov_theme_upcomingandpastevents
+theme: ausgov_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:8c240bcb-5972-48d4-9f44-8b8ef54ad375'
+settings:
+  id: 'block_content:8c240bcb-5972-48d4-9f44-8b8ef54ad375'
+  label: 'Upcoming and Past Events'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /news-and-events/events
+    negate: false

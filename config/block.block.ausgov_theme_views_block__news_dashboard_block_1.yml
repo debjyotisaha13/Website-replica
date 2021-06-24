@@ -1,0 +1,37 @@
+uuid: 95a082bf-5dbf-4e1d-b8b1-60fe13aea675
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_dashboard
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - ausgov_theme
+id: ausgov_theme_views_block__news_dashboard_block_1
+theme: ausgov_theme
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:news_dashboard-block_1'
+settings:
+  id: 'views_block:news_dashboard-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      news_creator: news_creator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
