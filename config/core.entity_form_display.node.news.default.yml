@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
-    - field.field.node.news.field_parent
+    - field.field.node.news.field_news_category
     - node.type.news
   module:
     - path
@@ -30,7 +30,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_parent:
+  field_news_category:
     weight: 26
     settings:
       match_operator: CONTAINS

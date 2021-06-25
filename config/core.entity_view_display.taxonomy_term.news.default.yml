@@ -1,0 +1,13 @@
+uuid: 01844578-eeae-41f1-bf28-eb429358ce75
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.news
+id: taxonomy_term.news.default
+targetEntityType: taxonomy_term
+bundle: news
+mode: default
+content: {  }
+hidden:
+  description: true

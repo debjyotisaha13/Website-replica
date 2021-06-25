@@ -1,0 +1,8 @@
+uuid: 2b879b3a-556d-4739-a35e-6e922f89a3c9
+langcode: en
+status: true
+dependencies: {  }
+name: News
+vid: news
+description: 'Categorising news on the basis of its type'
+weight: 0
