@@ -24,11 +24,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  links:
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_child: true
   field_parent: true
+  links: true
