@@ -41,6 +41,9 @@ html * {
     margin: 0 15px;
     box-sizing: border-box;
 }
+#navbar-main .navbar-nav li {
+    position: static;
+}
 #navbar-main .nav-item a {
     color: black;
     padding: 1rem 1.5rem;
