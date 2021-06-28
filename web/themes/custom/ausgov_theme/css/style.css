@@ -61,6 +61,21 @@ html * {
     display: block;
     margin-top: 0;
     width: -webkit-fill-available;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.dropdown:hover .dropdown-menu a {
+    text-decoration: none;
+    padding: none;
+}
+.dropdown-item span{
+    color: #007dab;
+    padding: 5px;
+}
+.dropdown-menu span:hover {
+    color: white;
+    background-color: #224A61;
 }
 #main-content {
     background-color: #0098b0;
@@ -74,19 +89,75 @@ html * {
     font-weight: 200;
     width: 100%;
 }
-article {
-    padding: 10px 20px 25px 25px;
+.tile {
+    padding: 40px 20px;
     border-bottom: 3px solid #d9d9dc;
-
+    height: 300px;
 }
-article a{
+.row-fluid .tile .fontawesome-icons{
+    display: block;
+    color: #007dab;
+}
+.tile svg {
+    font-size: 2rem;
+}
+.tile a{
     text-decoration: none;
 }
-article a:hover{
+.tile a:hover{
     text-decoration: underline;
 }
-article:hover {
+.tile:hover {
     background-color: #eee;
     border-bottom: 3px solid #007dab;
     transition: none;
+}
+.row-fluid{
+    border-left: none !important;
+}
+
+section .content h1 {
+    padding: 2rem 0;
+    border-top: 2px solid #f0f0f3;
+    border-bottom: 2px solid #f0f0f3;
+}
+section .content article {
+    margin-top: 2em;
+}
+.row .views-row {
+    border-left: 2px solid #d9d9dc;
+    padding: 0 15px;
+    margin: 10px;
+}
+.row .views-row:hover {
+    border-left: 2px solid #007dab;
+}
+.views-row .fontawesome-icons {
+    display: inline-block;
+    color: #007dab;
+}
+.sidebar .views-row {
+    margin: 0;
+    border-left: 2px solid #007dab;
+}
+.sidebar .views-row a:hover {
+    text-decoration: underline;
+}
+.sidebar .views-row a {
+    color: #000;
+    text-decoration: none;
+}
+.sidebar .views-row {
+    padding: 10px;
+}
+.sidebar h2 {
+    border-bottom: none;
+}
+.sidebar-block .row .views-row+.views-row{
+    border-top: 2px solid #f0f0f3;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color:#007dab;
+    text-decoration: underline;
+    background-color: #f0f0f3;
 }

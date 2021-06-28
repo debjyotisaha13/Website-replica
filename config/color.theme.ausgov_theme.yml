@@ -1,0 +1,18 @@
+palette:
+  top: '#055a8e'
+  bottom: '#1d84c3'
+  bg: '#ffffff'
+  sidebar: '#ffffff'
+  sidebarborders: '#ffffff'
+  footer: '#292929'
+  button: '#007bff'
+  buttonhover: '#0256b1'
+  titleslogan: '#fffeff'
+  text: '#3b3b3b'
+  link: '#0071b3'
+logo: 'public://color/ausgov_theme-cfce20a8/logo.svg'
+stylesheets:
+  - 'public://color/ausgov_theme-cfce20a8/colors.css'
+files:
+  - 'public://color/ausgov_theme-cfce20a8/logo.svg'
+  - 'public://color/ausgov_theme-cfce20a8/colors.css'
