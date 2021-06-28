@@ -1,0 +1,30 @@
+uuid: 308d54b2-a551-473c-a10d-e4cbe5c38340
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9f9003ef-0f12-4159-9098-d4aceb67e2be'
+  module:
+    - block_content
+    - system
+  theme:
+    - ausgov_theme
+id: sitebanner
+theme: ausgov_theme
+region: main_content
+weight: 0
+provider: null
+plugin: 'block_content:9f9003ef-0f12-4159-9098-d4aceb67e2be'
+settings:
+  id: 'block_content:9f9003ef-0f12-4159-9098-d4aceb67e2be'
+  label: 'Site Banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

@@ -62,3 +62,31 @@ html * {
     margin-top: 0;
     width: -webkit-fill-available;
 }
+#main-content {
+    background-color: #0098b0;
+    color: white;
+}
+#main-content p {
+    margin: 25px auto;
+    padding: 17px 0 7px 0;
+    font-size: 2.02em;
+    line-height: 1.4em;
+    font-weight: 200;
+    width: 100%;
+}
+article {
+    padding: 10px 20px 25px 25px;
+    border-bottom: 3px solid #d9d9dc;
+
+}
+article a{
+    text-decoration: none;
+}
+article a:hover{
+    text-decoration: underline;
+}
+article:hover {
+    background-color: #eee;
+    border-bottom: 3px solid #007dab;
+    transition: none;
+}

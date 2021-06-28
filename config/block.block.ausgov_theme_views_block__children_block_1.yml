@@ -26,5 +26,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /events
+    pages: "/events\r\n<front>"
     negate: true

@@ -4,9 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.rss
-    - core.entity_view_mode.node.teaser
+    - field.storage.node.body
   module:
     - node
+    - text
     - user
 _core:
   default_config_hash: HAnuLuk87TQ6QDwuJNjLTJYoBftdp6XtJh8RdBx3-TY
@@ -73,46 +74,6 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       filters:
-        promote:
-          admin_label: ''
-          expose:
-            description: ''
-            identifier: ''
-            label: ''
-            multiple: false
-            operator: ''
-            operator_id: ''
-            remember: false
-            remember_roles:
-              authenticated: authenticated
-            required: false
-            use_operator: false
-            operator_limit_selection: false
-            operator_list: {  }
-          exposed: false
-          field: promote
-          group: 1
-          group_info:
-            default_group: All
-            default_group_multiple: {  }
-            description: ''
-            group_items: {  }
-            identifier: ''
-            label: ''
-            multiple: false
-            optional: true
-            remember: false
-            widget: select
-          group_type: group
-          id: promote
-          is_grouped: false
-          operator: '='
-          relationship: none
-          table: node_field_data
-          value: '1'
-          plugin_id: boolean
-          entity_type: node
-          entity_field: promote
         status:
           expose:
             operator: ''
@@ -198,9 +159,12 @@ display:
           query_comment: ''
           query_tags: {  }
       row:
-        type: 'entity:node'
+        type: fields
         options:
-          view_mode: teaser
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       sorts:
         sticky:
           admin_label: ''
@@ -216,34 +180,200 @@ display:
           plugin_id: boolean
           entity_type: node
           entity_field: sticky
-        created:
-          field: created
-          id: created
-          order: DESC
+        title:
+          id: title
           table: node_field_data
-          plugin_id: date
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
+          order: ASC
           exposed: false
           expose:
             label: ''
-          granularity: second
           entity_type: node
-          entity_field: created
+          entity_field: title
+          plugin_id: standard
       style:
-        type: default
+        type: grid
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: true
-          uses_fields: false
+          columns: 4
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
       title: ''
       header: {  }
       footer: {  }
       relationships: {  }
-      fields: {  }
-      arguments: {  }
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: h2
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<article class=\"tile\">\r\n<h3 class=\"tile-topic-description\">{{ title }}</h3>\r\n<div class=\"tile-topic-description\">{{ body }}</div>\r\n</article>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_summary_or_trimmed
+          settings:
+            trim_length: 150
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+      arguments:
+        field_parent_target_id:
+          id: field_parent_target_id
+          table: node__field_parent
+          field: field_parent_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: fixed
+          default_argument_options:
+            argument: '3'
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            items_per_page: 25
+            override: false
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
+          plugin_id: numeric
       display_extenders: {  }
     display_plugin: default
     display_title: Default
@@ -251,12 +381,15 @@ display:
     position: 0
     cache_metadata:
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.body'
   feed_1:
     display_plugin: feed
     id: feed_1
@@ -288,11 +421,14 @@ display:
       enabled: false
     cache_metadata:
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.body'
   page_1:
     display_options:
       path: node
@@ -303,9 +439,12 @@ display:
     position: 1
     cache_metadata:
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.body'
