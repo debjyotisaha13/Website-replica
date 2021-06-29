@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.events.field_date_of_event
     - field.field.node.events.field_description
     - field.field.node.events.field_event_image
+    - field.field.node.events.field_event_tags
     - image.style.thumbnail
     - node.type.events
   module:
@@ -47,6 +48,16 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_event_tags:
+    weight: 31
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   langcode:
     type: language_select
@@ -90,6 +101,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 2

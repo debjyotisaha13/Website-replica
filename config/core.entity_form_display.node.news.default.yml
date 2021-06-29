@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.news.body
     - field.field.node.news.field_news_category
+    - field.field.node.news.field_news_tags
     - node.type.news
   module:
     - path
@@ -32,6 +33,16 @@ content:
     third_party_settings: {  }
   field_news_category:
     weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_news_tags:
+    weight: 27
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -82,6 +93,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 2
