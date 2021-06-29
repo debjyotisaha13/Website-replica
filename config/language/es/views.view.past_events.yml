@@ -1,0 +1,5 @@
+label: 'Eventos pasados'
+display:
+  default:
+    display_options:
+      title: 'Eventos pasados'

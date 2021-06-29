@@ -27,4 +27,5 @@ content:
 hidden:
   field_font_awesome_icons: true
   field_parent: true
+  langcode: true
   links: true

@@ -1,0 +1,5 @@
+label: 'पिछली घटनाएं'
+display:
+  default:
+    display_options:
+      title: 'पिछली घटनाएं'

@@ -1,0 +1,10 @@
+label: 'आगामी कार्यक्रम'
+display:
+  default:
+    display_options:
+      empty:
+        area:
+          content:
+            value: "<p>No Upcoming Events.</p>\r\n"
+            format: basic_html
+      title: 'आगामी कार्यक्रम'

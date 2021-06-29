@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.events.field_date_of_event
     - field.field.node.events.field_description
     - field.field.node.events.field_event_image
+    - image.style.large
     - node.type.events
   module:
     - datetime
@@ -37,10 +38,11 @@ content:
     weight: 1
     label: hidden
     settings:
-      image_style: ''
+      image_style: large
       image_link: ''
     third_party_settings: {  }
     type: image
     region: content
 hidden:
+  langcode: true
   links: true
