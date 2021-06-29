@@ -110,6 +110,11 @@
         </div>
       {% endblock %}
     {% endif %}
+    <div id="main-content">
+      <div class="container">
+        {{ page.main_content }}
+      </div>
+    </div>
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
       {% block content %}
         <div id="main" class="{{ container }}">

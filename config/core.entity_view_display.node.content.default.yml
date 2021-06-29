@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.content.body
+    - field.field.node.content.field_font_awesome_icons
     - field.field.node.content.field_parent
     - node.type.content
   module:
@@ -22,5 +23,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_font_awesome_icons: true
   field_parent: true
   links: true

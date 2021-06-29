@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.content.body
+    - field.field.node.content.field_font_awesome_icons
     - field.field.node.content.field_parent
     - node.type.content
   module:
+    - fontawesome
     - path
     - text
 id: node.content.default
@@ -30,6 +32,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_font_awesome_icons:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: fontawesome_icon_widget
+    region: content
   field_parent:
     weight: 27
     settings:
