@@ -1,0 +1,10 @@
+label: 'Próximos Eventos'
+display:
+  default:
+    display_options:
+      empty:
+        area:
+          content:
+            value: "<p>No Upcoming Events.</p>\r\n"
+            format: basic_html
+      title: 'Próximos Eventos'

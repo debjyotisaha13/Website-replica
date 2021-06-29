@@ -11,6 +11,7 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_translation: 0
   contact: 0
   contextual: 0
   ctools: 0
@@ -24,12 +25,13 @@ module:
   file: 0
   filter: 0
   fontawesome: 0
-  fontawesome_iconpicker_widget: 0
   fontawesome_menu_icons: 0
   help: 0
   history: 0
   image: 0
+  language: 0
   link: 0
+  locale: 0
   menu_link_content: 0
   menu_ui: 0
   node: 0
@@ -51,6 +53,7 @@ module:
   user: 0
   views_ui: 0
   pathauto: 1
+  content_translation: 10
   views: 10
   standard: 1000
 theme:

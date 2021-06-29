@@ -29,4 +29,5 @@ content:
 hidden:
   field_child: true
   field_parent: true
+  langcode: true
   links: true
