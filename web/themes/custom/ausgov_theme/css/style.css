@@ -58,7 +58,7 @@ html * {
     border-bottom: 5px solid #007dab;
 }
 .dropdown:hover .dropdown-menu {
-    display: block;
+
     margin-top: 0;
     width: -webkit-fill-available;
     display: flex;
@@ -69,9 +69,13 @@ html * {
     text-decoration: none;
     padding: none;
 }
+.dropdown-item {
+    padding: 0.25rem 0.25rem;
+}
 .dropdown-item span{
     color: #007dab;
     padding: 5px;
+    text-align: left;
 }
 .dropdown-menu span:hover {
     color: white;
