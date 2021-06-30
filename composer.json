@@ -24,7 +24,8 @@
         "drupal/easy_breadcrumb": "^1.15",
         "drupal/fontawesome": "^2.19",
         "drupal/fontawesome_menu_icons": "^1.9",
-        "drupal/pathauto": "^1.8"
+        "drupal/pathauto": "^1.8",
+        "drupal/webform": "^6.0"
     },
     "conflict": {
         "drupal/drupal": "*"

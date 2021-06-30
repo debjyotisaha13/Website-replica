@@ -1,0 +1,16 @@
+title: संपर्क
+settings:
+  confirmation_message: 'आपका संदेश भेज दिया गया'
+elements: |
+  name:
+    '#title': 'तुम्हारा नाम'
+  phone_number:
+    '#title': ' फ़ोन नंबर'
+  email:
+    '#title': 'आपका ईमेल'
+  message:
+    '#title': संदेश
+    '#test': 'कृपया इस विद्युतडाक को अनदेखा करें।'
+  actions:
+    '#title': प्रस्तुत
+    '#submit__label': 'मेसेज भेजें'
