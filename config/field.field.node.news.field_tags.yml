@@ -1,19 +1,19 @@
-uuid: 1ea8453b-2741-47e3-8379-7043eac0fc68
+uuid: 3a92c732-a834-48eb-86ca-ad771d176ae3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_news_tags
+    - field.storage.node.field_tags
     - node.type.news
     - taxonomy.vocabulary.tags
-id: node.news.field_news_tags
-field_name: field_news_tags
+id: node.news.field_tags
+field_name: field_tags
 entity_type: node
 bundle: news
-label: 'News Tags'
+label: Tags
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
