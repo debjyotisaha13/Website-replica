@@ -1,37 +1,40 @@
-uuid: d533fc3f-9cfc-487e-8b00-1c3f102d25ce
+uuid: 1149c7b8-6098-473d-a065-382622f02792
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.content_dashboard
+    - views.view.content_working_on
   module:
     - system
     - user
     - views
   theme:
     - ausgov_theme
-id: ausgov_theme_views_block__content_dashboard_block_1
+id: views_block__content_working_on_block_1
 theme: ausgov_theme
 region: content
-weight: -12
+weight: -5
 provider: null
-plugin: 'views_block:content_dashboard-block_1'
+plugin: 'views_block:content_working_on-block_1'
 settings:
-  id: 'views_block:content_dashboard-block_1'
+  id: 'views_block:content_working_on-block_1'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility:
+  request_path:
+    id: request_path
+    pages: /workflow-dashboard
+    negate: false
   user_role:
     id: user_role
     roles:
+      event_creator: event_creator
+      news_creator: news_creator
       content_creator: content_creator
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: false

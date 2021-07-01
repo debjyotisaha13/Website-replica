@@ -7,6 +7,7 @@ label: 'Event Creator'
 weight: 3
 is_admin: null
 permissions:
+  - 'access administration pages'
   - 'access content overview'
   - 'access taxonomy overview'
   - 'access toolbar'
@@ -16,4 +17,10 @@ permissions:
   - 'delete events revisions'
   - 'delete own events content'
   - 'edit own events content'
+  - 'use editorial transition changes_made'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition staged_for_review'
+  - 'view any unpublished content'
   - 'view events revisions'
+  - 'view latest version'
+  - 'view the administration theme'

@@ -1,6 +1,4 @@
 title: संपर्क
-settings:
-  confirmation_message: 'आपका संदेश भेज दिया गया'
 elements: |
   name:
     '#title': 'तुम्हारा नाम'
@@ -14,3 +12,5 @@ elements: |
   actions:
     '#title': प्रस्तुत
     '#submit__label': 'मेसेज भेजें'
+settings:
+  confirmation_message: 'आपका संदेश भेज दिया गया'

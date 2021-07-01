@@ -1,0 +1,111 @@
+uuid: c90070da-7d74-41e5-aa52-dbe216007bbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - block_content.type.extra_links
+    - node.type.content
+    - node.type.events
+    - node.type.news
+  module:
+    - content_moderation
+_core:
+  default_config_hash: Ln7YAg2WXZ-5wn9ib-v9qOKFxF2YZLnwSKtX-V455hE
+id: editorial
+label: Editorial
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      label: Archived
+      weight: 5
+      published: false
+      default_revision: true
+    changes_requested:
+      published: false
+      default_revision: true
+      label: 'Changes requested'
+      weight: 7
+    draft:
+      published: false
+      default_revision: false
+      label: Draft
+      weight: -5
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 0
+    review:
+      published: false
+      default_revision: true
+      label: Review
+      weight: 6
+  transitions:
+    archive:
+      label: Archive
+      from:
+        - published
+      to: archived
+      weight: -3
+    archived_draft:
+      label: 'Restore to Draft'
+      from:
+        - archived
+      to: draft
+      weight: -2
+    archived_published:
+      label: Restore
+      from:
+        - archived
+      to: published
+      weight: -1
+    changes_made:
+      label: 'Changes made'
+      from:
+        - changes_requested
+      to: review
+      weight: 2
+    changes_requested:
+      label: 'Changes requested'
+      from:
+        - published
+        - review
+      to: changes_requested
+      weight: 3
+    create_new_draft:
+      label: 'Create new Draft'
+      from:
+        - draft
+        - published
+      to: draft
+      weight: -5
+    publish:
+      label: Publish
+      to: published
+      weight: -4
+      from:
+        - draft
+        - published
+    review_success:
+      label: 'Review Success'
+      from:
+        - review
+      to: published
+      weight: 1
+    staged_for_review:
+      label: 'Staged for Review'
+      from:
+        - draft
+      to: review
+      weight: 0
+  entity_types:
+    block_content:
+      - basic
+      - extra_links
+    node:
+      - content
+      - events
+      - news
+  default_moderation_state: draft
