@@ -12,7 +12,7 @@ dependencies:
 id: ausgov_theme_views_block__events_block_1
 theme: ausgov_theme
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: 'views_block:events-block_1'
 settings:

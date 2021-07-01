@@ -26,5 +26,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/events\r\n<front>"
+    pages: "/events\r\n<front>\r\n/workflow-dashboard"
     negate: true

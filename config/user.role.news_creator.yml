@@ -7,6 +7,7 @@ label: 'News Creator'
 weight: 4
 is_admin: null
 permissions:
+  - 'access administration pages'
   - 'access content overview'
   - 'access taxonomy overview'
   - 'access toolbar'
@@ -16,4 +17,10 @@ permissions:
   - 'delete news revisions'
   - 'delete own news content'
   - 'edit own news content'
+  - 'use editorial transition changes_made'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition staged_for_review'
+  - 'view any unpublished content'
+  - 'view latest version'
   - 'view news revisions'
+  - 'view the administration theme'

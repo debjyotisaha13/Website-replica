@@ -9,7 +9,7 @@ _core:
 id: ausgov_theme_local_tasks
 theme: ausgov_theme
 region: content
-weight: -5
+weight: -9
 provider: null
 plugin: local_tasks_block
 settings:

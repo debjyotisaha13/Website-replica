@@ -1,37 +1,37 @@
-uuid: d533fc3f-9cfc-487e-8b00-1c3f102d25ce
+uuid: 900153e6-62b5-4ae7-bbf9-9db9be9d2cd4
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.content_dashboard
+    - views.view.admin_on_review
   module:
     - system
     - user
     - views
   theme:
     - ausgov_theme
-id: ausgov_theme_views_block__content_dashboard_block_1
+id: views_block__admin_on_review_block_1
 theme: ausgov_theme
 region: content
-weight: -12
+weight: -6
 provider: null
-plugin: 'views_block:content_dashboard-block_1'
+plugin: 'views_block:admin_on_review-block_1'
 settings:
-  id: 'views_block:content_dashboard-block_1'
+  id: 'views_block:admin_on_review-block_1'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
 visibility:
+  request_path:
+    id: request_path
+    pages: /workflow-dashboard
+    negate: false
   user_role:
     id: user_role
     roles:
-      content_creator: content_creator
+      administrator: administrator
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: false

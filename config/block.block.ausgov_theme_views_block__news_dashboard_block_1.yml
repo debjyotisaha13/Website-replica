@@ -13,7 +13,7 @@ dependencies:
 id: ausgov_theme_views_block__news_dashboard_block_1
 theme: ausgov_theme
 region: content
-weight: -7
+weight: -11
 provider: null
 plugin: 'views_block:news_dashboard-block_1'
 settings:
