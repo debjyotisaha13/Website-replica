@@ -1,21 +1,19 @@
-uuid: 5f58661e-0c4e-4676-a06b-5ab928d74806
+uuid: e226d9c7-c135-4013-acd8-13e6b53b81fc
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_tags
-    - node.type.article
+    - node.type.events
     - taxonomy.vocabulary.tags
-_core:
-  default_config_hash: QdUgf_beeoaPiyKorFv0q1fcJpWH_uZTqe_xoVJacrw
-id: node.article.field_tags
+id: node.events.field_tags
 field_name: field_tags
 entity_type: node
-bundle: article
+bundle: events
 label: Tags
-description: 'Enter a comma-separated list. For example: Amsterdam, Mexico City, "Cleveland, Ohio"'
+description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -24,6 +22,8 @@ settings:
     target_bundles:
       tags: tags
     sort:
-      field: _none
-    auto_create: true
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

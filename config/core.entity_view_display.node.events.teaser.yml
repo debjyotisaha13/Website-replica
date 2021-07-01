@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.events.field_date_of_event
     - field.field.node.events.field_description
     - field.field.node.events.field_event_image
-    - field.field.node.events.field_event_tags
+    - field.field.node.events.field_tags
     - node.type.events
   module:
     - user
@@ -20,6 +20,6 @@ hidden:
   field_date_of_event: true
   field_description: true
   field_event_image: true
-  field_event_tags: true
+  field_tags: true
   langcode: true
   links: true

@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_date_of_event
     - field.storage.node.field_description
     - field.storage.node.field_event_image
-    - field.storage.node.field_event_tags
+    - field.storage.node.field_tags
     - image.style.medium
     - node.type.events
   module:
@@ -428,24 +428,24 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: field
-        field_event_tags:
-          id: field_event_tags
-          table: node__field_event_tags
-          field: field_event_tags
+        field_tags:
+          id: field_tags
+          table: node__field_tags
+          field: field_tags
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
           alter:
-            alter_text: true
-            text: '{{ field_event_tags }}'
+            alter_text: false
+            text: ''
             make_link: true
-            path: '/taxonomy/term/{{ field_event_tags__target_id }}/{{ type }}'
+            path: '/taxonomy/term/{{ field_tags__target_id }}/{{ type }}'
             absolute: false
             external: false
             replace_spaces: false
-            path_case: lower
+            path_case: none
             trim_whitespace: false
             alt: ''
             rel: ''
@@ -593,7 +593,7 @@ display:
         - 'config:field.storage.node.field_date_of_event'
         - 'config:field.storage.node.field_description'
         - 'config:field.storage.node.field_event_image'
-        - 'config:field.storage.node.field_event_tags'
+        - 'config:field.storage.node.field_tags'
   block_1:
     display_plugin: block
     id: block_1
@@ -613,4 +613,4 @@ display:
         - 'config:field.storage.node.field_date_of_event'
         - 'config:field.storage.node.field_description'
         - 'config:field.storage.node.field_event_image'
-        - 'config:field.storage.node.field_event_tags'
+        - 'config:field.storage.node.field_tags'
