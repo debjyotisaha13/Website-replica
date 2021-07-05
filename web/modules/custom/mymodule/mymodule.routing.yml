@@ -1,0 +1,10 @@
+mymodule.welcome:
+  path: '/welcome/{user}'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\WelcomeController::welcome'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      user:
+        type: string
